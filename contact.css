@@ -1,0 +1,314 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background: #f5e8d3;
+  color: #333;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    padding: 0 2rem;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Navbar */
+.navbar{
+    width: 100%;
+    max-width: 1200px;
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Hilangkan titik list */
+li{
+  list-style: none;
+}
+
+/* Hilangkan garis bawah link */
+a{
+  text-decoration: none;
+}
+
+/* Logo */
+.navbar .logo a{
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #222;
+}
+
+/* Links */
+.navbar .links{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.navbar .links a{
+    color: #222;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar .links a:hover{
+    color: orange;
+}
+
+/* Action Button */
+.action-btn{
+    background: orange;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.action-btn:hover{
+    transform: scale(1.05);
+    color: white;
+}
+/* HERO */
+.hero{
+  text-align: center;
+  padding: 80px 20px 50px;
+}
+
+.hero h1{
+  font-size: 50px;
+  color: #7a4b2c;
+  margin-bottom: 10px;
+}
+
+.hero p{
+  color: #555;
+  font-size: 18px;
+}
+
+/* CONTACT */
+.contact-section{
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 40px;
+
+  padding-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+/* Kiri */
+.contact-info{
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-info h2{
+  color: #7a4b2c;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.contact-info p{
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.info-box{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  background: white;
+  padding: 15px 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.info-box i{
+  color: orange;
+  font-size: 20px;
+}
+
+/* Form */
+.contact-form{
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-form form{
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.contact-form input,
+.contact-form textarea{
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  font-size: 16px;
+}
+
+.contact-form button{
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: orange;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover{
+  background: #d98a00;
+}
+
+/* FOOTER */
+.footer{
+  background: #5b341d;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 50px;
+}
+
+.footer h2{
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+.footer p{
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.footer-icon{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+
+  margin-bottom: 20px;
+}
+
+.footer-icon a{
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  color: white;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.footer-icon a:hover{
+  background: orange;
+  transform: translateY(-3px);
+}
+
+.footer small{
+  color: #ccc;
+}
+
+
+@media(max-width:768px){
+
+  .navbar{
+    flex-direction: column;
+    height: auto;
+
+    padding: 20px 0;
+    gap: 15px;
+  }
+
+  .links{
+    flex-wrap: wrap;
+    justify-content: center; /*Meratakan teks*/
+  }
+
+  .hero h1{
+    font-size: 38px;
+  }
+
+}
+
+/* Burger */
+.toggle-btn{
+    font-size: 28px;
+    color: #222;
+    cursor: pointer;
+    display: block;
+}
+
+/* Sidebar */
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: -260px; /*mengatur posisi dari kanan*/
+    width: 250px;
+    height: 100%;
+    background: white;
+    padding: 90px 20px;
+    transition: 0.4s;
+    z-index: 9999; /*mengatur urutan tampilan elemen yang saling bertumpuk*/
+    box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+}
+
+.sidebar.active{
+    right: 0; /*agar disebelah kanan*/
+}
+
+.sidebar a{
+    display: block;
+    color: #222;
+    text-decoration: none;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.sidebar a:hover{
+    background: orange;
+    color: white;
+}
