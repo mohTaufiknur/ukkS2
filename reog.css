@@ -89,7 +89,7 @@ header{
 .hero{
     width: 100%;
     height: 600px;
-    background-image: url(Gambar/reogbg.png);
+    background-image: url(reogbg.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
